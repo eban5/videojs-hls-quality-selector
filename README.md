@@ -21,6 +21,14 @@ Does not yet support browsers using native HLS (Safari, Edge, etc).  To enable p
 
 Set to true to display the currently selected resolution in the menu button.  When not enabled, displayed an included VJS "HD" icon.
 
+**sortAscending** `boolean` - _true_
+
+Set to false to display the resolutions in descending order (highest resolution first). When not enabled, the list of resolutions are sorted in ascending order by default.
+
+**autoPlacement** `string` - _"top"_
+
+Set to "top" or "bottom" to place the "Auto" menu item at either the top or bottom of the menu.
+
 **placementIndex** `integer`
 
 Set this to override the default positioning of the menu button in the control bar relative to the other components in the control bar.
@@ -32,7 +40,7 @@ Set this to one of the custom VJS icons ([https://videojs.github.io/font/](https
 
 ## Methods
 
-**getCurrentQuality** `string` - _'auto'__
+**getCurrentQuality** `string` - _'auto'_
 
 Return the current set quality or 'auto'
 
@@ -45,6 +53,10 @@ Default setup - Menu selected:
 
 Display Current Quality option enabled:
 ![Example](example-2.png)
+
+
+Display Current Quality option disabled, Sorted in descending order, "Auto" placement at the top of the menu. 
+![Example](example-3.png)
 
 ## Table of Contents
 
